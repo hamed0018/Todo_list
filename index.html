@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todo</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Task List 2023</h1>
+      <input type="text" placeholder="what do you planned?" id="InputAddTask" />
+      <button class="btn" id="AddTask">Add task</button>
+    </div>
+    <div class="listTask" id="listTask">
+      <h1 class="title">Tasks</h1>
+    </div>
+   
+        <div class="modual" id="modual">
+            <p class="font-weight-bold text-dark" >Are you sure you want to delete?</p>
+            <div class="btns display-flex">
+                <button class="edit btn btn-sm btn-primary" id="Modual_cancel">cancel</button>
+            <button class="delete btn btn-sm btn-danger" id="Modual_delete">delete</button>
+            </div>
+        </div>
+        <div class="alert alert-success" role="alert" id="alert">
+            Editing was done successfully
+          </div>
+          <div class="alert alert-danger" role="alert" id="Alert">
+            deleting was done successfully
+          </div>
+    <script src="index.js"></script>
+  </body>
+</html>

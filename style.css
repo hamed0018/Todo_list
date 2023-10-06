@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #555;
+    overflow-x: hidden;
+
+}
+.container{
+     width:  70% ;
+     height: 20vh;
+     font-family: 'Nunito Sans', sans-serif;
+     color: #888;
+}
+.container input{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(1, 28, 62);
+    width: 60%;
+    border: none;
+    outline: none;
+    color: white;
+    
+}
+.container .btn{
+    padding: 10px;
+    background-color: #555;
+    color: palevioletred;
+    outline: none;
+    border: none;
+}
+.container input::placeholder{
+    color: white;
+}
+.listTask{
+    width:  70% ;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #888;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.listTask .task{
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(1, 28, 62);
+    width: 60%;
+    border: none;
+    outline: none;
+}
+.listTask .task input{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(1, 28, 62);
+    width: 80%;
+    border: none;
+    outline: none;
+    color: white;
+}
+.task .btn{
+    padding: 10px;
+    background-color:rgb(1, 28, 62);
+    color: palevioletred;
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
+.modual{
+    gap: 5px;
+    width: 250px;
+    height: 140px;
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 100%;
+    transition: all 0.5s ease-in;
+}
+.show{
+    left: calc(100% - 260px);
+}
+
+.hide{
+    left: 100%;
+}
+.alert{
+    position: absolute;
+    top: 10%;
+    left: 100%;
+    transition: all 2s ease-in;
+}
+.showAlert{
+    left: calc(100% - 290px);
+}
